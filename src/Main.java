@@ -1,129 +1,93 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("привет мир!");
-        var a = 1;
-        if (a >= 0) ;
-        System.out.println("число положительное");
-        var box = 5;
-        System.out.println(box);
-        box = box + 2;
-        System.out.println(box);
-        box = box - 3;
-        System.out.println(box);
-        box = box * 3;
-        System.out.println(box);
-        box = box / 4;
-        System.out.println(box);
-
-        var x = 1;
-        var y = 3;
-        var resultat = x + y;
-        System.out.println("x+y=" + resultat);
-
-        var liftingCapacity = 50;
-        var stuffWeight = 20;
-        var capacityLeft = liftingCapacity - stuffWeight;
-        System.out.println("еще можно положить " + capacityLeft + " кг вещей");
-
-        var appleWeight = 2;
-        var orangesWeight = 3;
-        var fruitWeight = appleWeight + orangesWeight;
-        System.out.println("общий вес фруктов " + fruitWeight);
-
-        var meatWeight = 4;
-        var waterWeight = 5;
-        var tomatoesWeight = 2;
-        var cucumbersWeight = 2;
-        var peppersWeight = 2;
-        var zucchiniWeight = 2;
-        var vegetablesWeight = tomatoesWeight + cucumbersWeight + peppersWeight + zucchiniWeight;
-        var productsWeight = fruitWeight + vegetablesWeight + meatWeight + waterWeight;
-        System.out.println("общий вес фруктов " + productsWeight + " кг!");
-
-        var leftWeight = liftingCapacity - stuffWeight - productsWeight;
-        System.out.println("место осталось " + leftWeight + " кг!");
-
-        productsWeight = productsWeight * 2;
-        System.out.println("Теперь вес продуктов " + productsWeight);
-
-        leftWeight = liftingCapacity - stuffWeight - productsWeight;
-        System.out.println("перегруз место осталось " + leftWeight + " кг!");
-
-        var overload = (stuffWeight + productsWeight) % liftingCapacity;
-        System.out.println("перегруз на " + overload + " кг!");
-
-        var productsInOneCar = productsWeight / 2;
-        System.out.println("продуктов в одной машине теперь " + productsInOneCar);
 
 
-        var dog = 8.0;
-        var cat = 3.6;
-        var paper = 763789.0;
-        System.out.println(dog);
-        System.out.println(cat);
-        System.out.println(paper);
+        int a = 1222333444;
+        byte b = 99;
+        short c = 17296;
+        long d = 8789678567876556807l;
+        float k = 3.96799775544f;
+        double f = 1.1E+3;
 
 
-        dog = dog + 4.0;
-        cat = cat + 4.0;
-        paper = paper + 4.0;
-        System.out.println("dog" + dog);
-        System.out.println("cat" + cat);
-        System.out.println("paper" + paper);
+        double f1 = 27.12;
+        long d1 = 987678965549l;
+        double f2 = 2.786;
+        short c1 = 569;
+        short c2 = -159;
+        short c3 = 27897;
+        byte b1 = 67;
 
 
-        dog = dog - 3.5;
-        cat = cat - 1.6;
-        paper = paper - 7639.0;
-        System.out.println("dog" + dog);
-        System.out.println("cat" + cat);
-        System.out.println("paper" + paper);
+        byte lp = 23;
+        System.out.println("людмила павловна=" + lp + "ученика");
+        byte as = 27;
+        System.out.println("анна сергеевна=" + as + "ученика");
+        byte ea = 30;
+        System.out.println("екатерина андреевна=" + ea + "ученика");
+        short paper = 480;
+        System.out.println("бумаги=" + paper);
+        byte q = 23 + 27 + 30;
+        System.out.println("всего ученников=" + q);
+        short onlyOne = 480 / 80;
+        System.out.println("на каждого ученика расчитано=" + onlyOne + "листов бумаги");
 
 
-        var friend = 19;
-        System.out.println(friend);
-        friend = friend + 2;
-        System.out.println(friend);
-        friend = friend / 7;
-        System.out.println(friend);
+        short efficiencyCar = 16 / 2;
+        System.out.println("производительность машины за 1 мин=" + efficiencyCar);
+        int effiCar = efficiencyCar * 20;
+        System.out.println("производительность машины за 20 мин=" + effiCar);
+        int effiCarDay = efficiencyCar * 24 * 60;
+        System.out.println("производительность машины в день=" + effiCarDay);
+        int effiCar3Day = effiCarDay * 3;
+        System.out.println("производительность машины за 3 дня =" + effiCar3Day);
+        int effiCarMonth = effiCarDay * 30;
+        System.out.println("производительность за месяц=" + effiCarMonth);
 
 
-        var frog = 3.5;
-        System.out.println(frog);
-        frog = frog * 10.0;
-        System.out.println(frog);
-        frog = frog / 3.5;
-        System.out.println(frog);
-        frog = frog + 4;
-        System.out.println(frog);
+        int pointOneClass = 2 + 4;
+        System.out.println("ккраски на 1 класс=" + pointOneClass);
+        int pointWight = 2;
+        System.out.println("белой краски на 1 класс" + pointWight);
+        int pointBrown = 4;
+        System.out.println("корничневой краски на 1 класс=" + pointBrown);
+        int pointMax = 120;
+        System.out.println("всего краски=" + pointMax);
+        int classRoom = pointMax / pointOneClass;
+        System.out.println("всего класов =" + classRoom);
+        int wightClass = classRoom * pointWight;
+        System.out.println("белой краски=" + wightClass);
+        int brownClass = classRoom * pointBrown;
+        System.out.println("коричневой краски=" + brownClass);
+        System.out.println("в школе , где " + classRoom + "классов,нужно" + wightClass + "банок белой краски и" + brownClass + "баок корричневой краски");
 
 
-        var fighter1 = 78.2;
-        var fighter2 = 82.7;
-        var sum = fighter1 + fighter2;
-        System.out.println("fighter1 + fighter2=" + sum);
-        var difference = fighter2 - fighter1;
-        System.out.println("difference=" + (fighter2 - fighter1));
-        var procent = fighter2 / fighter1;
-        System.out.println("procent=" + (fighter2 % fighter1));
+        int grammInKg = 1000;
+        int banana = 80;
+        int milk = 105;
+        int iceCream = 100;
+        int egs = 70;
+        int bananaPieces = 5;
+        int milkPieces = 200;
+        int iceCreampieces = 2;
+        int egsPieces = 4;
+        int resultat = (banana * bananaPieces) + (milk * milkPieces) + (iceCream * iceCreampieces) + (egs * egsPieces);
+        int resultatKg = resultat / grammInKg;
+        System.out.println(resultatKg);
 
 
-        var f = 640;
-        System.out.println(f);
-        var d = 8;
-        System.out.println(d);
-        var z = f / d;
-        System.out.println(" всего работников в компании  " + z);
-        var j = 80;
-        System.out.println(j);
-        var k = 80 + 94;
-        System.out.println("пополнение" + k);
-        var m = f / k;
-        System.out.println("если" + k + "то" + m);
-
-
-
-
+        int gramInKg = 1000;
+        int weightSport = 7;
+        int weightPower = gramInKg * weightSport;
+        int minWeight = 250;
+        int maxWeight = 500;
+        int minDays = weightPower / maxWeight;
+        int maxDays = weightPower / minDays;
+        int avgDays = (minDays + maxDays) / 2;
+        System.out.println("min:" + minDays);
+        System.out.println("max:" + maxDays);
+        System.out.println("avg:" + avgDays);
 
 
     }
