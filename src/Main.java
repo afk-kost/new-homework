@@ -64,12 +64,13 @@ public class Main {
 
 
         int grammInKg = 1000;
+        int mlInGr = 105;
         int banana = 80;
         int milk = 105;
         int iceCream = 100;
         int egs = 70;
         int bananaPieces = 5;
-        int milkPieces = 200;
+        int milkPieces = 210;
         int iceCreampieces = 2;
         int egsPieces = 4;
         int resultat = (banana * bananaPieces) + (milk * milkPieces) + (iceCream * iceCreampieces) + (egs * egsPieces);
