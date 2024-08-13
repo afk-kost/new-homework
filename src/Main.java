@@ -91,5 +91,19 @@ public class Main {
         System.out.println("avg:" + avgDays);
 
 
+        int marrySale = 67_760;
+        int denSale = 83_690;
+        int krisSale = 76_230;
+        int procent = 10;
+        System.out.println(" ЗП до повышения " + " маша=" + marrySale + " денис=" + denSale + " кристина=" + krisSale);
+        float newSale = 1 + (10 / 100f);
+        int marrySaleMax = (int) (marrySale * newSale);
+        int marrySaleMin = (marrySaleMax - marrySale) * 12;
+        System.out.println("до повышения " + marrySaleMax + "после повышения" + marrySaleMin);
+
     }
+
+    public static void task1() {
+    }
+
 }
