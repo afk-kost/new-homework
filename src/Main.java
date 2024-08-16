@@ -1,109 +1,180 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("привет мир!");
-
-
-        int a = 1222333444;
-        byte b = 99;
-        short c = 17296;
-        long d = 8789678567876556807l;
-        float k = 3.96799775544f;
-        double f = 1.1E+3;
-
-
-        double f1 = 27.12;
-        long d1 = 987678965549l;
-        double f2 = 2.786;
-        short c1 = 569;
-        short c2 = -159;
-        short c3 = 27897;
-        byte b1 = 67;
-
-
-        byte lp = 23;
-        System.out.println("людмила павловна=" + lp + "ученика");
-        byte as = 27;
-        System.out.println("анна сергеевна=" + as + "ученика");
-        byte ea = 30;
-        System.out.println("екатерина андреевна=" + ea + "ученика");
-        short paper = 480;
-        System.out.println("бумаги=" + paper);
-        byte q = 23 + 27 + 30;
-        System.out.println("всего ученников=" + q);
-        short onlyOne = 480 / 80;
-        System.out.println("на каждого ученика расчитано=" + onlyOne + "листов бумаги");
-
-
-        short efficiencyCar = 16 / 2;
-        System.out.println("производительность машины за 1 мин=" + efficiencyCar);
-        int effiCar = efficiencyCar * 20;
-        System.out.println("производительность машины за 20 мин=" + effiCar);
-        int effiCarDay = efficiencyCar * 24 * 60;
-        System.out.println("производительность машины в день=" + effiCarDay);
-        int effiCar3Day = effiCarDay * 3;
-        System.out.println("производительность машины за 3 дня =" + effiCar3Day);
-        int effiCarMonth = effiCarDay * 30;
-        System.out.println("производительность за месяц=" + effiCarMonth);
-
-
-        int pointOneClass = 2 + 4;
-        System.out.println("ккраски на 1 класс=" + pointOneClass);
-        int pointWight = 2;
-        System.out.println("белой краски на 1 класс" + pointWight);
-        int pointBrown = 4;
-        System.out.println("корничневой краски на 1 класс=" + pointBrown);
-        int pointMax = 120;
-        System.out.println("всего краски=" + pointMax);
-        int classRoom = pointMax / pointOneClass;
-        System.out.println("всего класов =" + classRoom);
-        int wightClass = classRoom * pointWight;
-        System.out.println("белой краски=" + wightClass);
-        int brownClass = classRoom * pointBrown;
-        System.out.println("коричневой краски=" + brownClass);
-        System.out.println("в школе , где " + classRoom + "классов,нужно" + wightClass + "банок белой краски и" + brownClass + "баок корричневой краски");
-
-
-        int grammInKg = 1000;
-        int mlInGr = 105;
-        int banana = 80;
-        int milk = 105;
-        int iceCream = 100;
-        int egs = 70;
-        int bananaPieces = 5;
-        int milkPieces = 210;
-        int iceCreampieces = 2;
-        int egsPieces = 4;
-        int resultat = (banana * bananaPieces) + (milk * milkPieces) + (iceCream * iceCreampieces) + (egs * egsPieces);
-        int resultatKg = resultat / grammInKg;
-        System.out.println(resultatKg);
-
-
-        int gramInKg = 1000;
-        int weightSport = 7;
-        int weightPower = gramInKg * weightSport;
-        int minWeight = 250;
-        int maxWeight = 500;
-        int minDays = weightPower / maxWeight;
-        int maxDays = weightPower / minDays;
-        int avgDays = (minDays + maxDays) / 2;
-        System.out.println("min:" + minDays);
-        System.out.println("max:" + maxDays);
-        System.out.println("avg:" + avgDays);
-
-
-        int marrySale = 67_760;
-        int denSale = 83_690;
-        int krisSale = 76_230;
-        int procent = 10;
-        System.out.println(" ЗП до повышения " + " маша=" + marrySale + " денис=" + denSale + " кристина=" + krisSale);
-        float newSale = 1 + (10 / 100f);
-        int marrySaleMax = (int) (marrySale * newSale);
-        int marrySaleMin = (marrySaleMax - marrySale) * 12;
-        System.out.println("до повышения " + marrySaleMax + "после повышения" + marrySaleMin);
-
+        task14();
     }
 
     public static void task1() {
+        int age = 17;
+        if (age >= 18) {
+            System.out.println("Ты можешь водить");
+        }
+
     }
 
+    public static void task2() {
+        {
+            int age = 17;
+            if (age >= 18)
+                System.out.println("Ты можешь водить");
+            if (age < 18) {
+                System.out.println("Ты не можешь водить");
+            }
+        }
+    }
+
+    public static void task3() {
+        int score = 70;
+        if (score <= 60) {
+            System.out.println("Ты не прошел тест");
+        } else
+            System.out.println("Ты прошел тест");
+    }
+
+    public static void task4() {
+        int weight = 75;
+        if (weight >= 55 && weight <= 85) {
+            System.out.println("Твой вес в пределах нормы");
+        }
+    }
+
+    public static void task5() {
+        int temperature = 35;
+        if (temperature < 0 || temperature > 40) {
+            System.out.println("Сейчас экстремальные условия");
+        }
+    }
+
+    public static void task6() {
+        boolean teacherIsHappy = true;
+        if (teacherIsHappy) {
+            System.out.println("Учитель доволен");
+        }
+    }
+
+    public static void task7() {
+        int peopleInRoom = 55;
+        boolean roomIsNotSuitable = peopleInRoom < 20 || peopleInRoom > 60;
+        if (roomIsNotSuitable) {
+            System.out.println("В аудитории недостаточно или слишком много людей");
+        }
+    }
+
+    public static void task8() {
+        int age = 15;
+        if (age >= 18) {
+            System.out.println("совершеннолетие");
+        } else
+            System.out.println("не совершеннолетие");
+    }
+
+
+    public static void task9() {
+        int temp = 4;
+        if (temp < 5 || temp > 5) {
+            System.out.println("шапка нужна");
+        } else
+            System.out.println("шапка не нужна");
+    }
+
+    public static void task10() {
+        int speed = 60;
+        if (speed <= 60 || speed >= 60) {
+            System.out.println("скорость ниже , штрвфом не облагается");
+        } else
+            System.out.println("скорость выше, штрафом облагается");
+    }
+
+    public static void task11() {
+        int ageHum = 77;
+        if (ageHum >= 2 && ageHum <= 6) {
+            System.out.println("садик");
+        }
+        if (ageHum >= 7 && ageHum <= 17) {
+            System.out.println("школа");
+        }
+        if (ageHum >= 18 && ageHum <= 24) {
+            System.out.println("универ");
+        }
+        if (ageHum > 24) {
+            System.out.println("работа");
+
+
+        }
+    }
+
+    public static void task12() {
+        int ageChild = 32;
+        if (ageChild < 5) {
+            System.out.println("кататься на атракционе нельзя");
+        }
+        if (ageChild >= 5 && ageChild <= 14) {
+            System.out.println("можно только со взрослым.Если взрослого нет кататься нельзя");
+        }
+        if (ageChild > 14) {
+            System.out.println("кататься можно без сопровождения");
+        }
+    }
+
+    public static void task13() {
+        int MaxPeopleInVan = 102;
+        System.out.println("вместимость одного поезда=" + MaxPeopleInVan);
+        int SeetPeopleInVan = 60;
+        System.out.println("сидячих мест в одном поезде=" + SeetPeopleInVan);
+        int DownPeopleInVan = MaxPeopleInVan - SeetPeopleInVan;
+        System.out.println("стоячих мест в одном поезде=" + DownPeopleInVan);
+        int peopleInVan = 110;
+        if (peopleInVan >= 0 && peopleInVan <= 60) {
+            System.out.println("есть сидячие места");
+        }
+        if (peopleInVan >= 61 && peopleInVan <= 102 || peopleInVan >= 102) {
+            System.out.println("есть только стоячие места");
+        }
+        if (peopleInVan >= 102) {
+            System.out.println("мест нет");
+        }
+    }
+
+
+    public static void task14() {
+        int one = 35;
+        int two = 12;
+        int three = 5;
+        if (one >= two && one <= three) {
+            System.out.println("макс число в переменной one" + one);
+        } else if (two >= three) {
+            System.out.println("максимальное число в переменной two" + two);
+
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
